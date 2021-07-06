@@ -4,7 +4,11 @@
 
 const reverse = (arg) => {
   for (val of arg) {
-    console.log(val);
+    let reverseString = '';
+    for (let i = val.length - 1; i >= 0; i--) {
+      reverseString += val[i];
+    }
+    console.log(reverseString);
   }
 };
 
